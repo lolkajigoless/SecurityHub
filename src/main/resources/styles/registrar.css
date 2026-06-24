@@ -1,0 +1,9 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+#token {
+    -fx-text-fill: red; /* cor do texto */
+}
+}

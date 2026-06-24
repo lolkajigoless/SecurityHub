@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="358.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.securityhub.Login">
+   <children>
+        <Button fx:id="Codigo" layoutX="63.0" layoutY="166.0" onAction="#enviarCodigoParaEmail" prefHeight="26.0" prefWidth="133.0" text="Mandar codigo" />
+      <Label layoutX="63.0" layoutY="102.0" text="Email de recuperação">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ColocarEmailRec" layoutX="51.0" layoutY="131.0" prefHeight="26.0" prefWidth="157.0" />
+      <Button fx:id="btnVoltar" layoutX="199.0" layoutY="290.0" onAction="#Voltar" prefHeight="32.0" prefWidth="98.0" text="Voltar" />
+      <Label layoutX="206.0" layoutY="33.0" prefHeight="26.0" prefWidth="81.0" text="Recuperação" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="Recuperar" layoutX="280.0" layoutY="166.0" onAction="#verificarCodigoDigitado" prefHeight="26.0" prefWidth="133.0" text="Recuperar Token" />
+      <Label layoutX="324.0" layoutY="102.0" text="Código">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="colocar_codigo" layoutX="268.0" layoutY="131.0" prefHeight="26.0" prefWidth="157.0" />
+   </children>
+</AnchorPane>

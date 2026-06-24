@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="546.0" prefWidth="480.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.securityhub.Login">
+   
+    <stylesheets>
+      <URL value="@styles/registrar.css" />
+    </stylesheets>
+   
+   <children>
+      <Label layoutX="195.0" layoutY="45.0" prefHeight="27.0" prefWidth="74.0" text="Registrar" textFill="#26ab3e">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="116.0" text="Nome(Conta)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="164.0" text="E-mail">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="208.0" layoutY="117.0" />
+      <TextField fx:id="txtEmail" layoutX="208.0" layoutY="165.0" />
+      <Label layoutX="94.0" layoutY="209.0" prefHeight="27.0" prefWidth="107.0" text="Seu token é: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="142.0" layoutY="379.0" onAction="#registrarUsuario" prefHeight="38.0" prefWidth="181.0" text="Registrar" />
+      <Button fx:id="btnVoltar" layoutX="187.0" layoutY="464.0" onAction="#Voltar" prefHeight="38.0" prefWidth="91.0" text="Voltar" />
+      <Button fx:id="geraTK" layoutX="187.0" layoutY="314.0" mnemonicParsing="false" onAction="#atualizarToken" prefHeight="27.0" prefWidth="91.0" text="Gerar Token" />
+      <Label layoutX="62.0" layoutY="235.0" lineSpacing="1.0" prefHeight="70.0" prefWidth="380.0" text="*AVISO: Este token será utilizado para acessar sua conta. Recomendamos que você o anote em um local seguro. Caso o perca, não se preocupe — será possível recuperá-lo por meio do seu e-mail." textFill="#1b07f8" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="token" editable="false" focusTraversable="false" layoutX="208.0" layoutY="210.0" />
+   </children>
+</AnchorPane>
